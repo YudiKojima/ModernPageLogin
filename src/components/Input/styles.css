@@ -1,0 +1,25 @@
+.container-input {
+  display: flex;
+  flex-direction: column;
+  width: 200%;
+  margin-bottom: 24px;
+}
+
+.container-input label {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.container-input input {
+  outline: none;
+  border: 1px solid #000;
+  border-radius: 50px;
+  padding: 16px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.container-input input::placeholder {
+  font-size: 16px;
+  opacity: 0.8;
+}

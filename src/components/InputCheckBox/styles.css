@@ -1,0 +1,42 @@
+.container-input-checkbox {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.container-input-checkbox input {
+  display: none;
+}
+
+.container-input-checkbox label {
+  font-size: 14px;
+  color: #2f2f2f;
+}
+
+.container-input-checkbox input + label:hover {
+  cursor: pointer;
+}
+
+.container-input-checkbox input + label::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #afb6c2;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+  margin-bottom: 3px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.container-input-checkbox input:checked + label::before {
+  background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+  padding: 1px;
+  border: none;
+  background-position: center;
+  background-color: var(--secondary-color);
+  color: #fff;
+}
